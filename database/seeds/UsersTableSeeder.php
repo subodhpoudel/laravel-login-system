@@ -13,6 +13,7 @@ class UsersTableSeeder extends Seeder
      */
     public function run()
     {
-        //
+        User::truncate(); //truncate users table
+        DB::table('role_user')->truncate();
     }
 }
